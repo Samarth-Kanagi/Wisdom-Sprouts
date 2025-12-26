@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #1f2937;
+    padding: 15px 0;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #cbd5e1;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.hero {
+    background: #2563eb;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 25px;
+    border: none;
+    background: #fff;
+    color: #2563eb;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero button:hover {
+    background: #e5e7eb;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 60px auto;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #1f2937;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Clean & Decent Web Design</h2>
+        <p>A simple HTML and CSS webpage that looks professional.</p>
+        <button>Get Started</button>
+    </div>
+</section>
+
+<section class="content container">
+    <div class="card">
+        <h3>Fast</h3>
+        <p>Lightweight and quick loading without any frameworks.</p>
+    </div>
+    <div class="card">
+        <h3>Responsive</h3>
+        <p>Looks good on mobile, tablet, and desktop.</p>
+    </div>
+    <div class="card">
+        <h3>Clean</h3>
+        <p>Minimal design with readable typography.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 My Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
